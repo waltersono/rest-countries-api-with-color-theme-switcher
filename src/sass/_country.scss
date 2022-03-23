@@ -1,0 +1,118 @@
+.country {
+  width: 25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-out;
+  margin-bottom: 4rem;
+  color: var(--color-text);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+
+  &__flag {
+    height: 15rem;
+    width: 100%;
+  }
+
+  &__header {
+    overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: var(--color-elements);
+  }
+
+  &__body {
+    background-color: var(--color-elements);
+    padding: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  &__name {
+    margin-bottom: 2rem;
+  }
+  &__detail {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.country-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+
+  &__flag {
+    height: 30rem;
+    width: 50rem;
+    margin-right: 0.5rem;
+  }
+
+  &__info {
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  &__name {
+    margin-bottom: 2rem;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__borders {
+    display: flex;
+    margin-top: 2rem;
+
+    &-list {
+      list-style-type: none;
+      display: flex;
+      width: 80%;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .country-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+
+    &__flag {
+      height: auto;
+      width: auto;
+    }
+
+    &__info {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .country-box {
+    &__details {
+      flex-direction: column;
+      &-box {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

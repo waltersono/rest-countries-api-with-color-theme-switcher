@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--color-background);
+  height: 100%;
+  color: var(--color-text);
+}
+
+.main {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 90%;
+}
+
+.invisible {
+  visibility: hidden;
+}

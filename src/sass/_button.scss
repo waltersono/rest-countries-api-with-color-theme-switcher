@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  background-color: var(--color-elements);
+  border-radius: 0.5rem;
+  padding: 0.8rem 2.5rem;
+  box-shadow: var(--box-shadow);
+  color: var(--color-text);
+  display: inline-block;
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}

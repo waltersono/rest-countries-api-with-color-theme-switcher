@@ -1,0 +1,16 @@
+:root {
+  --color-elements: hsl(0, 0%, 100%);
+  --color-background: hsl(0, 0%, 98%);
+  --color-input: hsl(0, 0%, 52%);
+  --color-text: hsl(207, 26%, 17%);
+
+  --max-width: 120rem;
+  --box-shadow: 0.1rem 0.1rem 0.7rem rgba(0, 0, 0, 0.8);
+}
+
+.theme-dark {
+  --color-elements: hsl(209, 23%, 22%);
+  --color-background: hsl(207, 26%, 17%);
+  --color-input: hsl(0, 0%, 52%);
+  --color-text: hsl(0, 0%, 100%);
+}
